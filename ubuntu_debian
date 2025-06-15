@@ -1,7 +1,7 @@
 #!/bin/bash
-# ================================================
-# FIXED LXD INSTALLATION SCRIPT FOR DEBIAN 12
-# ================================================
+# -----------------------------------------------
+#   FIXED LXD INSTALLATION SCRIPT FOR DEBIAN 12
+# -----------------------------------------------
 
 # Show banner
 echo -e "\033[1;34m"  # Biru terang
@@ -15,39 +15,39 @@ echo -e "\033[0m"
 echo -e "\033[1;32m>> Starting the virtual scrypt installation...\033[0m"
 sleep 2
 
-# --- [1] HAPUS SNAP LAMA ---
+# HAPUS SNAP LAMA
 echo "🧹 Membersihkan snap yang bermasalah..."
 sudo systemctl stop snapd
 sudo apt purge -y snapd
 sudo rm -rf /var/snap /snap /var/lib/snapd
 
-# --- [2] INSTALL SNAP YANG FRESH ---
+# INSTALL SNAP YANG FRESH
 echo "🔄 Menginstall ulang snapd..."
 sudo apt update
 sudo apt install -y snapd
 sudo systemctl start snapd
 sudo systemctl enable snapd
 
-# Tunggu sampai snapd benar-benar ready
+# TUNGGU SAMPAI SNAPD BENAR-BENAR READY
 sleep 10
 
-# --- [3] UPDATE SNAPD ---
+# UPDATE SNAPD
 echo "🆙 Memperbarui snapd core..."
 sudo snap install core
 sudo snap refresh core
 
-# --- [4] INSTALL LXD ---
+# INSTALL LXD
 echo "🐳 Menginstall LXD..."
 sudo snap install lxd --channel=latest/stable
 sudo snap refresh lxd --channel=latest/stable
 
-# --- [5] INISIALISASI LXD ---
+# INISIALISASI LXD
 echo "🔧 Inisialisasi LXD..."
 
-# Pastikan service LXD aktif
+# PASTIKAN SERVICE LXD AKTIF
 sudo snap start lxd
 
-# Tunggu sampai LXD benar-benar ready
+# TUNGGU SAMPAI LXD BENAR-BENAR READY
 timeout=30
 while [ $timeout -gt 0 ]; do
     if sudo lxd waitready; then
@@ -64,10 +64,10 @@ if [ $timeout -eq 0 ]; then
     sleep 10
 fi
 
-# Jalankan inisialisasi
+# JALANKAN INISIALISASI
 sudo lxd init --auto --storage-backend=dir
 
-# Verifikasi socket
+# VERIFIKASI SOCKET
 echo "🔍 Memverifikasi socket LXD..."
 if [ ! -S /var/snap/lxd/common/lxd/unix.socket ]; then
     echo "⚠️ Socket LXD tidak ditemukan, restarting service..."
@@ -75,7 +75,7 @@ if [ ! -S /var/snap/lxd/common/lxd/unix.socket ]; then
     sleep 10
 fi
 
-# --- [6] KONFIGURASI USER ---
+# KONFIGURASI USER
 echo "👤 Konfigurasi user..."
 sudo usermod -aG lxd $USER
 newgrp lxd <<EONG
@@ -83,19 +83,15 @@ echo "✅ LXD siap digunakan"
 lxc list
 EONG
 
-# --- [7] VERIFIKASI ---
+# VERIFIKASI
 echo "🔍 Verifikasi instalasi..."
 sudo lxc info
 lxc list
 
-# --- [8] BUAT CONTAINER ---
+# BUAT CONTAINER
 echo "🚀 Membuat container Ubuntu 20.04..."
 lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
-cat <<EOF
-
-✅ INSTALASI BERHASIL!
-       LANGKAH SELANJUTNYA
-          reboot dulu vpsnya...
-EOF
+echo "✅ INSTALASI BERHASIL!"
+echo "💡 Langkah selanjutnya: reboot dulu VPS-nya..."
