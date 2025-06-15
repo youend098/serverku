@@ -10,7 +10,7 @@ echo " ██╔████╔██║█████╗       ╚████
 echo " ██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
 echo " ██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
 echo " ╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo ">> Starting the virtual scrypt installation..."
+echo ">> Memulai instalasi scrypt virtual..."
 sleep 2
 
 # HAPUS SNAP LAMA
