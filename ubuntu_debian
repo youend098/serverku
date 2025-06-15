@@ -1,9 +1,9 @@
 #!/bin/bash
-# -----------------------------------------------
-#   FIXED LXD INSTALLATION SCRIPT FOR DEBIAN 12
-# -----------------------------------------------
+# --------------------------------------------------
+#   FIXED LXD INSTALLATION SCRIPT FOR DEBIAN 11/12
+# --------------------------------------------------
 
-# Show banner
+# SHOW BANNER
 echo -e "\033[1;34m"  # Biru terang
 echo " ███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo " ████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
@@ -28,7 +28,7 @@ sudo apt install -y snapd
 sudo systemctl start snapd
 sudo systemctl enable snapd
 
-# TUNGGU SAMPAI SNAPD BENAR-BENAR READY
+# TUNGGU SAMPAI SNAPD SIAP
 sleep 10
 
 # UPDATE SNAPD
@@ -47,7 +47,7 @@ echo "🔧 Inisialisasi LXD..."
 # PASTIKAN SERVICE LXD AKTIF
 sudo snap start lxd
 
-# TUNGGU SAMPAI LXD BENAR-BENAR READY
+# TUNGGU SAMPAI LXD SIAP
 timeout=30
 while [ $timeout -gt 0 ]; do
     if sudo lxd waitready; then
