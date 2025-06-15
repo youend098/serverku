@@ -65,7 +65,7 @@ break
 fi
 echo "⏳ Menunggu LXD ready... (sisa waktu: $timeout detik)"
 sleep 1
-(((timeout---)))
+((timeout--))
 done
 
 if [ $timeout -eq 0 ]; then
@@ -96,5 +96,5 @@ cat <<EOF
 ✅ INSTALASI BERHASIL
 
 # LANGKAH SELANJUTNYA
-(((reboot dulu vpsnya)))
+((reboot dulu vpsnya))
 EOF
