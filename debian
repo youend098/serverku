@@ -1,9 +1,9 @@
 #!/bin/bash
-# ================================================
-# LXD INSTALLATION SCRIPT FOR DEBIAN 12
-# ================================================
+# ------------------------------------------------
+#     LXD INSTALLATION SCRIPT FOR DEBIAN 11/12
+# ------------------------------------------------
 
-# Show banner
+# SHOW BANNER
 echo -e "\033[1;34m"  # Biru terang
 echo " ███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo " ████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
@@ -15,85 +15,86 @@ echo -e "\033[0m"
 echo -e "\033[1;32m>> Starting the virtual scrypt installation...\033[0m"
 sleep 2
 
-# --- [0] UPDATE SYSTEM ---
+# UPDATE SYSTEM
 echo "🔄 Memperbarui sistem..."
 sudo apt update
 sudo apt upgrade -y
 
-# --- [1] HAPUS SNAP LAMA ---
+# HAPUS SNAP LAMA
 echo "🧹 Membersihkan snap yang bermasalah..."
 sudo systemctl stop snapd snapd.socket
 sudo apt purge -y snapd
 sudo rm -rf /var/snap /snap /var/lib/snapd
 
-# --- [2] INSTALL SNAP FRESH ---
+# INSTALL SNAP FRESH
 echo "🔄 Menginstall snapd..."
 sudo apt install -y snapd
 
-# Aktifkan service snapd
+# AKTIFKAN SERVICE SNAPD
 sudo systemctl enable --now snapd snapd.socket
 
-# Tambahkan snap ke PATH
+# TAMBAHKAN SNAP KE PATH
 if ! grep -q "/snap/bin" ~/.bashrc; then
-    echo "export PATH=\$PATH:/snap/bin" >> ~/.bashrc
-    source ~/.bashrc
+echo "export PATH=\$PATH:/snap/bin" >> ~/.bashrc
+source ~/.bashrc
 fi
 
-# Tunggu sampai snapd siap
+# TUNGGU SAMPAI SNAPD SIAP
 sleep 10
 
-# --- [3] UPDATE SNAPD ---
+# UPDATE SNAPD
 echo "🆙 Memperbarui snapd core..."
 sudo snap install core
 sudo snap refresh core
 
-# --- [4] INSTALL LXD ---
+# INSTALL LXD
 echo "🐳 Menginstall LXD..."
 sudo snap install lxd
 
-# --- [5] INISIALISASI LXD ---
+# INISIALISASI LXD
 echo "🔧 Inisialisasi LXD..."
 
-# Pastikan service LXD aktif
+# PASTIKAN SERVICE LXD AKTIF
 sudo snap start lxd
 
-# Tunggu sampai LXD ready
+# TUNGGU SAMPAI LXD READY
 timeout=60
 while [ $timeout -gt 0 ]; do
-    if sudo lxd waitready; then
-        break
-    fi
-    echo "⏳ Menunggu LXD ready... (sisa waktu: $timeout detik)"
-    sleep 1
-    ((timeout--))
+if sudo lxd waitready; then
+break
+fi
+echo "⏳ Menunggu LXD ready... (sisa waktu: $timeout detik)"
+sleep 1
+(((timeout---)))
 done
 
 if [ $timeout -eq 0 ]; then
-    echo "⚠️ LXD tidak ready dalam waktu yang ditentukan, restarting service..."
-    sudo snap restart lxd
-    sleep 10
+echo "⚠️ LXD tidak ready dalam waktu yang ditentukan, restarting service..."
+sudo snap restart lxd
+sleep 10
 fi
 
-# Jalankan inisialisasi
+# JALANKAN INISIALISASI
 sudo lxd init --auto --storage-backend=dir
 
-# --- [6] KONFIGURASI USER ---
+# KONFIGURASI USER
 echo "👤 Konfigurasi user..."
 sudo usermod -aG lxd,snapd $USER
 
-# --- [7] VERIFIKASI ---
+# VERIFIKASI
 echo "🔍 Verifikasi instalasi..."
 sudo lxc info
 lxc list
 
-# --- [8] BUAT CONTAINER ---
+# BUAT CONTAINER
 echo "🚀 Membuat container Ubuntu 20.04..."
 lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
 cat <<EOF
 
-✅ INSTALASI BERHASIL!
-       LANGKAH SELANJUTNYA
-          reboot dulu vpsnya...
+✅ INSTALASI BERHASIL
+
+# LANGKAH SELANJUTNYA
+(((reboot dulu vpsnya)))
 EOF
