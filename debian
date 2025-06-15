@@ -91,10 +91,5 @@ echo "🚀 Membuat container Ubuntu 20.04..."
 lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
-cat <<EOF
-
-✅ INSTALASI BERHASIL
-
-# LANGKAH SELANJUTNYA
-((reboot dulu vpsnya))
-EOF
+echo "✅ INSTALASI BERHASIL!"
+echo "💡 Langkah selanjutnya: reboot dulu VPS-nya..."
