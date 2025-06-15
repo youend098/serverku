@@ -41,7 +41,6 @@ cd
 rm ubuntu_debian
 apt update -y && apt upgrade -y && wget -q https://github.com/youend098/serverku/raw/refs/heads/main/ubuntu_debian && chmod +x ubuntu_debian && ./ubuntu_debian
 cd
-cd
 ```
 # 3. REBOOT DULU VPSNYA
 ```
@@ -52,7 +51,6 @@ reboot
 cd
 rm port.sh
 wget -q https://github.com/youend098/serverku/raw/refs/heads/main/port.sh && chmod +x port.sh && ./port.sh
-cd
 cd
 ```
 # 5. MASUK KE VIRTUAL UBUNTU 20
@@ -99,7 +97,6 @@ cd
 rm ubuntu_debian
 apt update -y && apt upgrade -y && wget -q https://github.com/youend098/serverku/raw/refs/heads/main/debian && chmod +x debian && ./debian
 cd
-cd
 ```
 # 3. REBOOT DULU VPSNYA
 ```
@@ -110,7 +107,6 @@ reboot
 cd
 rm port.sh
 wget -q https://github.com/youend098/serverku/raw/refs/heads/main/port.sh && chmod +x port.sh && ./port.sh
-cd
 cd
 ```
 # 5. MASUK KE VIRTUAL
