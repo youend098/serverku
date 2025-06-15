@@ -96,9 +96,6 @@ lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 cat <<EOF
 
 ✅ INSTALASI BERHASIL!
-
-Gunakan perintah berikut:
-- Akses container: lxc exec ubuntu20 -- bash
-- Cek status: lxc list
-- Stop container: lxc stop ubuntu20
+       LANGKAH SELANJUTNYA
+          reboot dulu vpsnya...
 EOF
