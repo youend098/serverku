@@ -93,4 +93,5 @@ lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 echo "✅ INSTALASI BERHASIL!"
 echo "💡 Langkah selanjutnya: reboot dulu VPS-nya..."
 
+    sleep 10
 reboot
