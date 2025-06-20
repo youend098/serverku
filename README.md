@@ -8,11 +8,11 @@
 ```
 sudo su
 ```
-# GANTI PASWORD ROOT
+#### GANTI PASWORD ROOT
 ```
 sudo passwd root
 ```
-# SETTING PERMISSION LOGIN ROOT
+### SETTING PERMISSION LOGIN ROOT
 ```
 nano /etc/ssh/sshd_config
 ```
