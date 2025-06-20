@@ -16,7 +16,7 @@ sudo passwd root
 ```
 nano /etc/ssh/sshd_config
 ```
-#
+---
 ### CARA INSTALL SCRIPT DI UBUNTU 18/20 & DEBIAN 9/10
 ---
 ##### 1. DAFTAR IP VPS
