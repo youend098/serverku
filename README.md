@@ -102,8 +102,8 @@ menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
 #
-### INFO PORT
-###### TROJAN WS (443)
+###   INFO PORT
+- TROJAN WS (443)
 ###### TROJAN GRPC (443)
 ###### SHADOWSOCKS WS (443)
 ###### SHADOWSOCKS GRPC (443)
