@@ -24,81 +24,81 @@ nano /etc/ssh/sshd_config
 apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 ##### 3. SCRIPT SIAP DI GUNAKAN
-────────────────────────────────────────────
-# CARA INSTALL SCRIPT DI UBUNTU 22/24
-# 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
+#
+### CARA INSTALL SCRIPT DI UBUNTU 22/24
+##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
-# 2. INSTALL SCRIPT VIRTUAL
+##### 2. INSTALL SCRIPT VIRTUAL
 ```
 cd
 rm ubuntu_debian
 apt update -y && apt upgrade -y && wget -q https://github.com/youend098/serverku/raw/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
 ```
-# 4. BUKA PORT
+##### 3. BUKA PORT
 ```
 cd
 rm port.sh
 wget -q https://github.com/youend098/serverku/raw/refs/heads/main/port.sh && chmod +x port.sh && ./port.sh
 ```
-# 5. MASUK KE VIRTUAL UBUNTU 20
+##### 4. MASUK KE VIRTUAL UBUNTU 20
 ```
 lxc exec ubuntu20 -- bash
 ```
-# 6. INSTALL SCRIPT VPN TUNNELING
+##### 5. INSTALL SCRIPT VPN TUNNELING
 ```
 apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
-# 7. INSTALASI SCRIPT SELESAI
-# 8. REBOOT DULU VPSNYA
+##### 6. INSTALASI SCRIPT SELESAI
+##### 7. REBOOT DULU VPSNYA
 ```
 reboot
 ```
-# 9. UNTUK MASUK SCRIPT KETIKAN
+##### 8. UNTUK MASUK SCRIPT KETIKAN
 ```
 lxc exec ubuntu20 -- bash
 ```
 ```
 menu
 ```
-# 10. SCRIPT SIAP DI GUNAKAN
-────────────────────────────────────────────
-# CARA INSTALL SCRIPT DI DEBIAN 11/12
-# 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
+##### [9] SCRIPT SIAP DI GUNAKAN
+#
+### CARA INSTALL SCRIPT DI DEBIAN 11/12
+##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
-# 2. INSTALL SCRIPT VIRTUAL
+##### 2. INSTALL SCRIPT VIRTUAL
 ```
 cd
 rm ubuntu_debian
 apt update -y && apt upgrade -y && wget -q https://github.com/youend098/serverku/raw/refs/heads/main/debian.sh && chmod +x debian.sh && ./debian.sh
 ```
-# 4. BUKA PORT  
+##### 4. BUKA PORT  
 ```
 cd
 rm port.sh
 wget -q https://github.com/youend098/serverku/raw/refs/heads/main/port.sh && chmod +x port.sh && ./port.sh
 ```
-# 5. MASUK KE VIRTUAL
+##### 5. MASUK KE VIRTUAL
 ```
 lxc exec ubuntu20 -- bash
 ```
-# 6. INSTALL SCRIPT VPN TUNNELING
+##### 6. INSTALL SCRIPT VPN TUNNELING
 ```
 apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
-# 7. INSTALASI SCRIPT SELESAI
-# 8. REBOOT DULU VPSNYA
+##### 7. INSTALASI SCRIPT SELESAI
+##### 8. REBOOT DULU VPSNYA
 ```
 reboot
 ```
-# 9. UNTUK MASUK SCRIPT KETIKAN
+##### 9. UNTUK MASUK SCRIPT KETIKAN
 ```
 lxc exec ubuntu20 -- bash
 ```
 ```
 menu
 ```
-# 10. SCRIPT SIAP DI GUNAKAN
-────────────────────────────────────────────
+##### 10. SCRIPT SIAP DI GUNAKAN
+#
 # INFO PORT
 - TROJAN WS (443)
 - TROJAN GRPC (443)
