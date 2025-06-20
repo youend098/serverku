@@ -21,7 +21,7 @@ nano /etc/ssh/sshd_config
   🔐https://github.com/youend098/registerku/blob/main/reg
 # 2. INSTALL SCRIPT PADA VPS YANG TELAH DI DAFTARKAN
 ```
-apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 3. SCRIPT SIAP DI GUNAKAN
 ────────────────────────────────────────────
@@ -46,7 +46,7 @@ lxc exec ubuntu20 -- bash
 ```
 # 6. INSTALL SCRIPT VPN TUNNELING
 ```
-apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 7. INSTALASI SCRIPT SELESAI
 # 8. REBOOT DULU VPSNYA
@@ -83,7 +83,7 @@ lxc exec ubuntu20 -- bash
 ```
 # 6. INSTALL SCRIPT VPN TUNNELING
 ```
-apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 7. INSTALASI SCRIPT SELESAI
 # 8. REBOOT DULU VPSNYA
