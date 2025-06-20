@@ -1,7 +1,7 @@
 ---
 ### ⚙️SCRIPT BY MF_youend⚙️
 ---
-### REGISTER IP VIA TELEGRAM
+### DAFTAR IP VPS
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ---
 ##### LOGIN USER ROOT
@@ -29,8 +29,8 @@ apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend
 ---
 ### CARA INSTALL SCRIPT DI UBUNTU 22/24
 ---
-##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
-  🔐https://github.com/youend098/registerku/blob/main/reg
+##### 1. DAFTAR IP VPS
+### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ##### 2. INSTALL SCRIPT VIRTUAL
 ```
 cd
@@ -67,8 +67,8 @@ menu
 ---
 ### CARA INSTALL SCRIPT DI DEBIAN 11/12
 ---
-##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
-  🔐https://github.com/youend098/registerku/blob/main/reg
+##### 1. DAFTAR IP VPS
+### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ##### 2. INSTALL SCRIPT VIRTUAL
 ```
 cd
