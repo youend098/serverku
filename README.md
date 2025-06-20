@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version SCRIPT](https://img.shields.io/badge/version-1.0.0-blue)
 ---
 ### ⚙️SCRIPT BY MF_youend⚙️
 ---
