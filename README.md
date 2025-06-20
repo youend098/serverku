@@ -46,7 +46,7 @@ lxc exec ubuntu20 -- bash
 ```
 # 6. INSTALL SCRIPT VPN TUNNELING
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 7. INSTALASI SCRIPT SELESAI
 # 8. REBOOT DULU VPSNYA
@@ -83,7 +83,7 @@ lxc exec ubuntu20 -- bash
 ```
 # 6. INSTALL SCRIPT VPN TUNNELING
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 7. INSTALASI SCRIPT SELESAI
 # 8. REBOOT DULU VPSNYA
