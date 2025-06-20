@@ -1,4 +1,5 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Stars](https://img.shields.io/github/stars/youend098/server?style=social)
 ---
 ### ⚙️SCRIPT BY MF_youend⚙️
 ---
