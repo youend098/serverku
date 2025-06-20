@@ -65,7 +65,7 @@ menu
 ##### 9. SCRIPT SIAP DI GUNAKAN
 #
 ### CARA INSTALL SCRIPT DI DEBIAN 11/12
-───────────────────────────────────
+-----------------------------------
 ##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
 ##### 2. INSTALL SCRIPT VIRTUAL
@@ -102,8 +102,8 @@ menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
 #
-###   INFO PORT
-- TROJAN WS (443)
+### INFO PORT
+##### TROJAN WS (443)
 ###### TROJAN GRPC (443)
 ###### SHADOWSOCKS WS (443)
 ###### SHADOWSOCKS GRPC (443)
