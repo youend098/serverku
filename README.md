@@ -1,9 +1,9 @@
 ---
-# ⚙️SCRIPT BY MF_youend⚙️
+### ⚙️SCRIPT BY MF_youend⚙️
 ---
 ### REGISTER IP VIA TELEGRAM
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-#
+---
 ##### LOGIN USER ROOT
 ```
 sudo su
@@ -26,9 +26,9 @@ nano /etc/ssh/sshd_config
 apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 ##### 3. SCRIPT SIAP DI GUNAKAN
-#
+---
 ### CARA INSTALL SCRIPT DI UBUNTU 22/24
-───────────────────────────────────
+---
 ##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
 ##### 2. INSTALL SCRIPT VIRTUAL
@@ -64,9 +64,9 @@ lxc exec ubuntu20 -- bash
 menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
-#
+---
 ### CARA INSTALL SCRIPT DI DEBIAN 11/12
------------------------------------
+---
 ##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
 ##### 2. INSTALL SCRIPT VIRTUAL
@@ -102,8 +102,9 @@ lxc exec ubuntu20 -- bash
 menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
-#
+---
 ### INFO PORT
+---
 ##### TROJAN WS (443)
 ###### TROJAN GRPC (443)
 ###### SHADOWSOCKS WS (443)
