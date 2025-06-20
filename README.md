@@ -2,7 +2,7 @@
 ### ⚙️SCRIPT BY MF_youend⚙️
 ---
 ### DAFTAR IP VPS
-### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
+##### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ---
 ##### LOGIN USER ROOT
 ```
@@ -19,8 +19,8 @@ nano /etc/ssh/sshd_config
 #
 ### CARA INSTALL SCRIPT DI UBUNTU 18/20 & DEBIAN 9/10
 ---
-##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
-  🔐https://github.com/youend098/registerku/blob/main/reg
+##### 1. DAFTAR IP VPS
+### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ##### 2. INSTALL SCRIPT PADA VPS YANG TELAH DI DAFTARKAN
 ```
 apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/main/setup.sh && chmod +x setup.sh && ./setup.sh
