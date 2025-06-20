@@ -21,7 +21,7 @@ nano /etc/ssh/sshd_config
   🔐https://github.com/youend098/registerku/blob/main/reg
 # 2. INSTALL SCRIPT PADA VPS YANG TELAH DI DAFTARKAN
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/serverku/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
+apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend098/server/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 # 3. SCRIPT SIAP DI GUNAKAN
 ────────────────────────────────────────────
@@ -98,4 +98,19 @@ lxc exec ubuntu20 -- bash
 menu
 ```
 # 10. SCRIPT SIAP DI GUNAKAN
+────────────────────────────────────────────
+# INFO PORT
+- TROJAN WS (443)
+- TROJAN GRPC (443)
+- SHADOWSOCKS WS (443)
+- SHADOWSOCKS GRPC (443)
+- VLESS WS (443)
+- VLESS GRPC (443)
+- VLESS NONTLS (80)
+- VMESS WS (443)
+- VMESS GRPC (443)
+- VMESS NONTLS (80)
+- SSH WS / TLS (443)
+- SSH NON TLS (8880)
+- OVPN SSL/TCP (1194)
 ────────────────────────────────────────────
