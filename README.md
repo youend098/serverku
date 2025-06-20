@@ -12,7 +12,7 @@ sudo su
 ```
 sudo passwd root
 ```
-### SETTING PERMISSION LOGIN ROOT
+#### SETTING PERMISSION LOGIN ROOT
 ```
 nano /etc/ssh/sshd_config
 ```
