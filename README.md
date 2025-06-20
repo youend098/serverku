@@ -17,7 +17,7 @@ nano /etc/ssh/sshd_config
 ```
 #
 ### CARA INSTALL SCRIPT DI UBUNTU 18/20 & DEBIAN 9/10
----
+--
 ##### 1. MASUKAN IP VPS PADA FILE REGISTER YANG TELAH DI POINTING DI CLOUDFLARE SEBELUM NYA
   🔐https://github.com/youend098/registerku/blob/main/reg
 ##### 2. INSTALL SCRIPT PADA VPS YANG TELAH DI DAFTARKAN
