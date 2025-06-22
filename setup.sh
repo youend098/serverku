@@ -320,18 +320,18 @@ restart_system() {
     EXPSC=$(wget -qO- https://raw.githubusercontent.com/youend098/registerku/main/reg | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
-───────────────────────────────
-AUTOSCRIPT PREMIUM BY MF_youend
-───────────────────────────────
-USER           : $USRSC
-IP VPS         : $ipsaya
-DOMAIN         : $domain
-DATE           : $TIME
-TIME           : $TIMEZONE
-EXP SCRIPT     : $EXPSC
-───────────────────────────────
-NOTIFIKASI OTOMATIS DARI GITHUB
-───────────────────────────────
+<code>───────────────────────────────</code>
+<code>AUTOSCRIPT PREMIUM BY MF_youend</code>
+<code>───────────────────────────────</code>
+<code>USER   : </code><code>$USRSC</code>
+<code>IP VPS : </code><code>$ipsaya</code>
+<code>DOMAIN : </code><code>$domain</code>
+<code>DATE   : </code><code>$TIME</code>
+<code>TIME   : </code><code>$TIMEZONE</code>
+<code>EXP SC : </code><code>$EXPSC</code>
+<code>───────────────────────────────</code>
+<code>NOTIFIKASI OTOMATIS DARI GITHUB</code>
+<code>───────────────────────────────</code>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/MF_youend"}]]}'
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
