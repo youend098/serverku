@@ -118,7 +118,7 @@ mai="datediff \"$exp\" \"$DATE\""
 
 # STATUS AKTIF / EXPIRED
 Info="(Active)"
-Error="(Expired)"
+Error="(ExpiRED)"
 today=$(date -d "0 days" +"%Y-%m-%d")
 exp=$(curl https://raw.githubusercontent.com/youend098/registerku/main/reg | grep $MYIP | awk '{print $4}')
 if [[ $today < $exp ]]; then
