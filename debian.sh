@@ -1,8 +1,6 @@
 #!/bin/bash
 # POWERED BANNER BY MF_youend
 clear
-
-echo ""
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
@@ -11,7 +9,6 @@ echo "██║ ╚═╝ ██║██║            ██║   ╚███
 echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
 echo "─────────────────────── SUPPORT SCRIPT DEBIAN 11//12 ───────────────────────"
 echo "─────── MEMULAI INSTALASI SCRIPT VIRTUAL LXD LXC CONTAINER UBUNTU 20 ───────"
-echo ""
 sleep 5
 clear
 
@@ -92,7 +89,7 @@ lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
 # POWERED BANNER BY MF_youend
-echo ""
+clear
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
