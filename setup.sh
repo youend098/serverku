@@ -957,7 +957,7 @@ sudo hostnamectl set-hostname $username
 clear
 
 # POWERED BANNER BY MF_youend
-echo ""
+clear
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
@@ -968,5 +968,5 @@ echo "────────────────────────�
 echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
 echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
 echo ""
-read -p "Tekan [Enter] untuk reboot"
+read -p "                     TEKAN [ENTER] UNTUK [REBOOT]"
 reboot
