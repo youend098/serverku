@@ -2,6 +2,7 @@
 # AUTO SCRIPT BY MF_youend
 clear
 # POWERED BANNER BY MF_youend
+clear
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
@@ -91,8 +92,8 @@ echo "🚀 Membuat container Ubuntu 20.04..."
 lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
-clear
 # POWERED BANNER BY MF_youend
+clear
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
@@ -103,5 +104,5 @@ echo "────────────────────────�
 echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
 echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
 echo ""
-read -p "                     TEKAN [ENTER] UNTUK [reboot]"
+read -p "                     TEKAN [ENTER] UNTUK [REBOOT]"
 reboot
