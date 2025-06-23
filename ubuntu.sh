@@ -1,9 +1,7 @@
 #!/bin/bash
 # AUTO SCRIPT BY MF_youend
 clear
-
 # POWERED BANNER BY MF_youend
-echo ""
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
@@ -12,7 +10,6 @@ echo "██║ ╚═╝ ██║██║            ██║   ╚███
 echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
 echo "─────────────────────── SUPPORT SCRIPT UBUNTU 22//24 ───────────────────────"
 echo "─────── MEMULAI INSTALASI SCRIPT VIRTUAL LXD LXC CONTAINER UBUNTU 20 ───────"
-echo ""
 sleep 5
 clear
 
@@ -94,8 +91,8 @@ echo "🚀 Membuat container Ubuntu 20.04..."
 lxc launch ubuntu:20.04 ubuntu20
 lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
+clear
 # POWERED BANNER BY MF_youend
-echo ""
 echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
 echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
 echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
