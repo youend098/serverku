@@ -103,6 +103,5 @@ echo "────────────────────────�
 echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
 echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
 echo ""
-sleep 2
-read -p "Press [ Enter ] For Reboot"
+read -p "                     TEKAN [ENTER] UNTUK [reboot]"
 reboot
