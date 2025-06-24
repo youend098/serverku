@@ -3,14 +3,12 @@
 clear
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "────────────────────── SUPPORT SCRIPT UBUNTU / DEBIAN ──────────────────────"
-echo "──────────────── MEMULAI INSTALASI PORT PADA SCRIPT VIRTUAL ────────────────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "SUPPORT SCRIPT UBUNTU / DEBIAN"
+echo "MEMULAI INSTALASI PORT PADA SCRIPT VIRTUAL"
+echo "⏳LOADING..."
 sleep 5
 clear
 
