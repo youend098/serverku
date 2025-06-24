@@ -3,14 +3,11 @@
 clear
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "─────────────────────── SUPPORT SCRIPT UBUNTU 22//24 ───────────────────────"
-echo "─────── MEMULAI INSTALASI SCRIPT VIRTUAL LXD LXC CONTAINER UBUNTU 20 ───────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "⚠SUPPORT SCRIPT UBUNTU 22/24"
+echo "⚠MEMULAI INSTALASI SCRIPT VIRTUAL"
 sleep 5
 clear
 
