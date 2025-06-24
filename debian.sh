@@ -6,8 +6,9 @@ clear
 echo "┌───────────────────────┐"
 echo "│  MF_youend TUNNELING  │"
 echo "└───────────────────────┘"
-echo "⚠SUPPORT SCRIPT DEBIAN 11/12"
-echo "⚠MEMULAI INSTALASI SCRIPT VIRTUAL"
+echo "SUPPORT SCRIPT DEBIAN 11/12"
+echo "MEMULAI INSTALASI SCRIPT VIRTUAL"
+echo "⏳LOADING..."
 sleep 5
 clear
 
