@@ -256,17 +256,13 @@ clear
 
 # POWERED BANNER BY MF_youend
 echo ""
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "─────────────────────────── DOMAIN CONFIGURATION ───────────────────────────"
-echo "──────────────────────── SILAHKAN INPUT DOMAIN ANDA ────────────────────────"
-echo "─────────────── DOMAIN WAJIB SUDAH DI POINTING DI CLOUDFLARE ───────────────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "SILAHKAN INPUT DOMAIN ANDA"
+echo "DOMAIN WAJIB SUDAH DI POINTING DI CLOUDFLARE"
 echo ""
-read -p "           MASUKKAN DOMAIN ANDA DISINI : " domain
+read -p "MASUKKAN DOMAIN ANDA DISINI : " domain
 
 # PASTIKAN DIREKTORI TUJUAN ADA
 mkdir -p /etc/xray
@@ -936,12 +932,9 @@ clear
 
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
 echo "───────────────────────────────── SELAMAT ──────────────────────────────────"
 echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
 echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
