@@ -82,7 +82,7 @@
            "clients": [
               {
                  "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#trojanws
+#trojan
               }
           ],
          "udp": true
@@ -90,7 +90,7 @@
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/trojan-ws"
+               "path": "/trojan"
             }
          }
      },
@@ -103,7 +103,7 @@
            {
            "method": "aes-128-gcm",
           "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#ssws
+#shadowsocks
            }
           ],
           "network": "tcp,udp"
@@ -111,7 +111,7 @@
        "streamSettings":{
           "network": "ws",
              "wsSettings": {
-               "path": "/ss-ws"
+               "path": "/shadowsocks"
            }
         }
      },
@@ -184,7 +184,7 @@
           {
              "method": "aes-128-gcm",
              "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#ssgrpc 
+#shadowsocksgrpc 
            }
          ],
            "network": "tcp,udp"
@@ -192,7 +192,7 @@
     "streamSettings":{
      "network": "grpc",
         "grpcSettings": {
-           "serviceName": "ss-grpc"
+           "serviceName": "shadowsocks-grpc"
           }
        }
     }
