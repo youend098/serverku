@@ -3,14 +3,11 @@
 clear
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "─────────────────────── SUPPORT SCRIPT DEBIAN 11//12 ───────────────────────"
-echo "─────── MEMULAI INSTALASI SCRIPT VIRTUAL LXD LXC CONTAINER UBUNTU 20 ───────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "SUPPORT SCRIPT DEBIAN 11/12"
+echo "MEMULAI INSTALASI SCRIPT VIRTUAL"
 sleep 5
 clear
 
@@ -92,15 +89,10 @@ lxc exec ubuntu20 -- apt update && lxc exec ubuntu20 -- apt upgrade -y
 
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "───────────────────────────────── SELAMAT ──────────────────────────────────"
-echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
-echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "✅[SELAMAT] INSTALASI SCRIPT BERJALAN SUKSES"
 echo ""
-read -p "                     TEKAN [ENTER] UNTUK [REBOOT]"
+read -p "TEKAN [ENTER] UNTUK [REBOOT]"
 reboot
