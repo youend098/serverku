@@ -125,8 +125,8 @@ else
     sts="${Error}"
 fi
 
-echo "⏳LOADING..."
 clear
+echo "⏳LOADING..."
 
 # REPO    
 REPO="https://raw.githubusercontent.com/youend098/serverku/main/"
@@ -223,9 +223,9 @@ function nginx_install() {
     fi
 }
 
+clear
 # UPDATE DAN INSTALL PACKAGE
 function base_package() {
-    clear
     echo "🔄INSTALL PAKET YANG DIBUTUHKAN"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
@@ -250,8 +250,8 @@ function base_package() {
     sudo apt-get install -y speedtest-cli vnstat libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev bc rsyslog dos2unix zlib1g-dev libssl-dev libsqlite3-dev sed dirmngr libxml-parser-perl build-essential gcc g++ python htop lsof tar wget curl ruby zip unzip p7zip-full python3-pip libc6 util-linux build-essential msmtp-mta ca-certificates bsd-mailx iptables iptables-persistent netfilter-persistent net-tools openssl ca-certificates gnupg gnupg2 lsb-release gcc shc make cmake git screen socat xz-utils apt-transport-https gnupg1 dnsutils cron bash-completion ntpdate chrony jq openvpn easy-rsa
     echo "✅PAKET YANG DIBUTUHKAN SELESAI DI INSTALL"
 }
-clear
 
+clear
 # INPUT DOMAIN
 function pasang_domain() {
 echo -e ""
@@ -282,8 +282,8 @@ echo "IP=$domain" > /var/lib/kyt/ipvps.conf
 echo "✅DOMAIN SELESAI DISIMPAN : $domain"
 
 }
-clear
 
+clear
 # GANTI PASSWORD DEFAULT
 restart_system() {
     USRSC=$(wget -qO- https://raw.githubusercontent.com/youend098/registerku/main/reg | grep $MYIP | awk '{print $2}')
@@ -305,11 +305,10 @@ restart_system() {
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/MF_youend"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
-clear
 
+clear
 # PASANG SSL
 function pasang_ssl() {
-    clear
     echo "🔄MEMASANG CERTIFICATE SSL PADA DOMAIN"
     rm -rf /etc/xray/xray.key
     rm -rf /etc/xray/xray.crt
@@ -371,9 +370,9 @@ function make_folder_xray() {
     echo "& plughin Account" >> /etc/ssh/.ssh.db
 }
 
+clear
 # INSTALL XRAY
 function install_xray() {
-    clear
     echo "🔄INSTALL Core Xray 1.8.1 Latest Version"
     domainSock_dir="/run/xray"
     [ ! -d $domainSock_dir ] && mkdir $domainSock_dir
@@ -426,8 +425,8 @@ EOF
     echo "✅KONFIGURASI PAKET SELESAI DIPASANG"
 }
 
-function ssh(){
 clear
+function ssh(){
 echo "🔄MEMASANG PASSWORD SSH"
     wget -O /etc/pam.d/common-password "${REPO}file/password"
     chmod +x /etc/pam.d/common-password
@@ -498,8 +497,8 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 echo "✅PASSWORD SSH SELESAI DIPASANG"
 }
 
-function udp_mini(){
 clear
+function udp_mini(){
 echo "🔄MEMASANG SERVICE LIMIT QUOTA"
 wget raw.githubusercontent.com/youend098/serverku/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
@@ -583,6 +582,7 @@ systemctl start udp-mini-3
 echo "✅SERVICE LIMIT KUOTA SELESAI DIPASANG"
 }
 
+clear
 function ins_SSHD(){
 echo "🔄MEMASANG SSHD"
 wget -q -O /etc/ssh/sshd_config "${REPO}file/sshd" >/dev/null 2>&1
@@ -593,6 +593,7 @@ systemctl restart ssh
 echo "✅SSHD SELESAI DIPASANG"
 }
 
+clear
 function ins_dropbear(){
 echo "🔄INSTALL DROPBEAR"
 apt-get install dropbear -y > /dev/null 2>&1
@@ -603,6 +604,7 @@ chmod +x /etc/default/dropbear
 echo "✅DROPBEAR SELESAI DI INSTALL"
 }
 
+clear
 function ins_vnstat(){
 echo "🔄INSTALL VNSTAT"
 apt -y install vnstat > /dev/null 2>&1
@@ -624,6 +626,7 @@ rm -rf /root/vnstat-2.6
 echo "✅VNSTAT SELESAI DI INSTALL"
 }
 
+clear
 function ins_openvpn(){
 echo "🔄INSTALL OPENVPN"
 wget ${REPO}file/openvpn && chmod +x openvpn && ./openvpn
@@ -631,6 +634,7 @@ wget ${REPO}file/openvpn && chmod +x openvpn && ./openvpn
 echo "✅OPENVPN SELESAI DI INSTALL"
 }
 
+clear
 function ins_backup(){
 echo "🔄MEMASANG BACKUP SERVER"
 apt install rclone -y
@@ -667,6 +671,7 @@ wget -q -O /etc/ipserver "${REPO}file/ipserver" && bash /etc/ipserver
 echo "✅BACKUP SERVER SELESAI DIPASANG"
 }
 
+clear
 function ins_swab(){
 echo "🔄MEMASANG SWAP 1 G"
 gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
@@ -689,6 +694,7 @@ wget ${REPO}file/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 echo "✅SWAP 1 G SELESAI DIPASANG"
 }
 
+clear
 function ins_Fail2ban(){
 echo "🔄INSTALL FAIL2BAN"
 
@@ -706,6 +712,7 @@ wget -O /etc/kyt.txt "${REPO}file/issue.net"
 echo "✅FAIL2BAN SELESAI DI INSTALL"
 }
 
+clear
 function ins_epro(){
 echo "🔄INSTALL EPRO WEBSOCKET PROXY"
 wget -O /usr/bin/ws "${REPO}file/ws" >/dev/null 2>&1
@@ -747,6 +754,7 @@ apt autoremove -y >/dev/null 2>&1
 echo "✅EPRO WEBSOCKET PROXY SELESAI DI DI INSTALL"
 }
 
+clear
 function ins_restart(){
 echo "🔃RESTART SEMUA PAKET"
 /etc/init.d/nginx restart
@@ -779,6 +787,7 @@ rm -f /root/cert.pem
 echo "✅SEMUA PAKET BERHASIL DI RESTART"
 }
 
+clear
 function menu(){
 echo "🔄MEMASANG SEMUA PAKET MENU"
 wget ${REPO}menu/menu.zip
@@ -871,6 +880,7 @@ fi
 echo "✅SEMUA PAKET MENU BERHASIL DIPASANG"
 }
 
+clear
 function enable_services(){
 echo "🛠️ENABLE SERVICE"
 systemctl daemon-reload
@@ -885,6 +895,7 @@ systemctl restart haproxy
 echo "✅ENABLE SERVICE SELESAI"
 }
 
+clear
 function instal(){
 echo "🔧MULAI PROSES SEMUA INSTALASI"
 first_setup
