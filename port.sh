@@ -13,11 +13,11 @@ sleep 5
 clear
 
 # MEMBUAT NAMA CONTAINER
-echo "👤 Membuat Nama Container..."
+echo "👤Membuat Nama Container..."
 CONTAINER_NAME="ubuntu20"
 
 # MEMBUKA PORT YANG DIBUTUHKAN
-echo "🚀 Membuka Port Yang Dibutuhkan..."
+echo "🚀Membuka Port Yang Dibutuhkan..."
 declare -A PORTS=(
     ["xray443"]="443:443"
     ["xray80"]="80:80"
@@ -35,7 +35,7 @@ declare -A PORTS=(
 )
 
 # MEMERIKSA CONTAINER
-echo "🛠️ memeriksa Container..."
+echo "🛠️memeriksa Container..."
 if ! lxc list | grep -q "$CONTAINER_NAME"; then
     echo "Error: Container $CONTAINER_NAME not found!"
     exit 1
@@ -44,7 +44,7 @@ fi
 echo "Setting up port forwarding for container $CONTAINER_NAME..."
 
 # VALIDASI PORT YANG DIBUTUHKAN
-echo "🔧 Validasi Port Yang Dibutuhkan..."
+echo "🔧Validasi Port Yang Dibutuhkan..."
 for name in "${!PORTS[@]}"; do
     IFS=':' read -ra PORT_MAP <<< "${PORTS[$name]}"
     HOST_PORT="${PORT_MAP[0]}"
@@ -53,11 +53,11 @@ for name in "${!PORTS[@]}"; do
     echo "Configuring $name (host:$HOST_PORT -> container:$CONTAINER_PORT)"
     
     # HAPUS PORT LAMA
-    echo "🧹 Hapus Port Lama..."
+    echo "🧹Hapus Port Lama..."
     lxc config device remove "$CONTAINER_NAME" "$name" 2>/dev/null || true
     
     # BUAT PORT BARU
-    echo "🔄 Buat Port Baru..."
+    echo "🔄Buat Port Baru..."
     lxc config device add "$CONTAINER_NAME" "$name" proxy \
         listen=tcp:0.0.0.0:"$HOST_PORT" \
         connect=tcp:127.0.0.1:"$CONTAINER_PORT"
@@ -65,15 +65,10 @@ done
 
 # POWERED BANNER BY MF_youend
 clear
-echo "███╗   ███╗███████╗    ██╗   ██╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗██████╗ "
-echo "████╗ ████║██╔════╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╔════╝████╗  ██║██╔══██╗"
-echo "██╔████╔██║█████╗       ╚████╔╝ ██║   ██║██║   ██║█████╗  ██╔██╗ ██║██║  ██║"
-echo "██║╚██╔╝██║██╔══╝        ╚██╔╝  ██║   ██║██║   ██║██╔══╝  ██║╚██╗██║██║  ██║"
-echo "██║ ╚═╝ ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗██║ ╚████║██████╔╝"
-echo "╚═╝     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ "
-echo "───────────────────────────────── SELAMAT ──────────────────────────────────"
-echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
-echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
+echo "┌───────────────────────┐"
+echo "│  MF_youend TUNNELING  │"
+echo "└───────────────────────┘"
+echo "✅[SELAMAT] INSTALASI SCRIPT BERJALAN SUKSES"
 echo ""
 sleep 2
 echo "📝 DAFTAR PORT YANG BERHASIL DI CONFIGURASI:"
