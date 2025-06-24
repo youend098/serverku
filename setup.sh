@@ -935,9 +935,7 @@ clear
 echo "┌───────────────────────┐"
 echo "│  MF_youend TUNNELING  │"
 echo "└───────────────────────┘"
-echo "───────────────────────────────── SELAMAT ──────────────────────────────────"
-echo "───────────────────── INSTALASI SCRIPT BERJALAN SUKSES ─────────────────────"
-echo "─────────── TERIMAKASIH TELAH MENGGUNAKAN SCRIPT DARI MF_youend ────────────"
+echo "✅[SELAMAT] INSTALASI SCRIPT BERJALAN SUKSES"
 echo ""
-read -p "                     TEKAN [ENTER] UNTUK [REBOOT]"
+read -p "TEKAN [ENTER] UNTUK [REBOOT]"
 reboot
