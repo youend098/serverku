@@ -3,7 +3,7 @@
 ![Stars](https://img.shields.io/github/stars/youend098/serverku?style=social)
 
 ---
-### [ SCRIPT BY MF_youend ]
+### SCRIPT BY MF_youend
 ---
 ### DAFTAR IP VPS
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
@@ -21,7 +21,7 @@ sudo passwd root
 nano /etc/ssh/sshd_config
 ```
 ---
-### [ CARA INSTALL SCRIPT DI UBUNTU 18/20 & DEBIAN 9/10 ]
+### CARA INSTALL SCRIPT DI UBUNTU 18/20 & DEBIAN 9/10
 ---
 ##### 1. DAFTAR IP VPS
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
@@ -31,7 +31,7 @@ apt update && apt upgrade -y && wget -q https://raw.githubusercontent.com/youend
 ```
 ##### 3. SCRIPT SIAP DI GUNAKAN
 ---
-### [ CARA INSTALL SCRIPT DI UBUNTU 22/24 ]
+### CARA INSTALL SCRIPT DI UBUNTU 22/24
 ---
 ##### 1. DAFTAR IP VPS
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
@@ -69,7 +69,7 @@ menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
 ---
-### [ CARA INSTALL SCRIPT DI DEBIAN 11/12 ]
+### CARA INSTALL SCRIPT DI DEBIAN 11/12
 ---
 ##### 1. DAFTAR IP VPS
 ### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
