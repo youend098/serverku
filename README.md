@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-red)
 ![License](https://img.shields.io/github/license/youend098/serverku)
 ![Stars](https://img.shields.io/github/stars/youend098/serverku?style=social)
 
@@ -6,7 +6,7 @@
 ### SCRIPT BY MF_youend
 ---
 ### DAFTAR IP VPS
-### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
+### <a href="https://t.me/MF_youend" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=red"></a><br>
 ---
 ##### SETTING LOGIN USER ROOT
 ```
