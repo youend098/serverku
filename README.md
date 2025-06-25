@@ -109,8 +109,8 @@ menu
 ---
 ### [ INFO PORT ]
 ---
-##### - TROJAN WS [443]
-##### - TROJAN GRPC [443]
+##### - TROJAN WS [ 443 ]
+##### - TROJAN GRPC [ 443 ]
 ##### - SHADOWSOCKS WS [443]
 ##### - SHADOWSOCKS GRPC [443]
 ##### - VLESS WS [443]
