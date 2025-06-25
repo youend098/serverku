@@ -107,7 +107,7 @@ menu
 ```
 ##### 9. SCRIPT SIAP DI GUNAKAN
 ---
-### INFO PORT
+### - INFO PORT
 ---
 ##### TROJAN WS (443)
 ##### TROJAN GRPC (443)
