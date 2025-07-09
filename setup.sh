@@ -22,7 +22,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 
 # AMBIL TANGGAL DARI SERVER GOOGLE
-data_server=$(curl -siv --insecure https://google.com/ 2>&1 | grep -i "< Date:" | sed -e 's/< Date: //')
+data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 
 # FORMAT TANGGAL MENJADI DD-MM-YYYY
 tanggal_format=$(date -d "$data_server" +"%d-%m-%Y")
