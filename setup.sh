@@ -25,7 +25,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 
 # FORMAT TANGGAL MENJADI DD-MM-YYYY
-tanggal_format=$(date -d "$data_server" +"%d-%m-%Y")
+date_list=$(date +"%d-%m-%Y" -d "$data_server")
 
 # KONFIGURASI TELEGRAM
 TIME=$(date '+%d-%m-%Y')
