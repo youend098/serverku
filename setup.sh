@@ -208,9 +208,9 @@ function first_setup() {
         exit 1
     fi
 }
-clear
 
 function nginx_install() {
+    clear
     OS_ID=$(grep -w ID /etc/os-release | head -n1 | sed 's/ID=//' | sed 's/"//g')
     OS_NAME=$(grep -w PRETTY_NAME /etc/os-release | head -n1 | sed 's/PRETTY_NAME=//' | sed 's/"//g')
 
@@ -304,9 +304,9 @@ restart_system() {
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 
-clear
 # PASANG SSL
 function pasang_ssl() {
+    clear
     echo "🔄MEMASANG CERTIFICATE SSL PADA DOMAIN"
     rm -rf /etc/xray/xray.key
     rm -rf /etc/xray/xray.crt
@@ -368,9 +368,9 @@ function make_folder_xray() {
     echo "& plughin Account" >> /etc/ssh/.ssh.db
 }
 
-clear
 # INSTALL XRAY
 function install_xray() {
+    clear
     echo "🔄INSTALL Core Xray 1.8.1 Latest Version"
     domainSock_dir="/run/xray"
     [ ! -d $domainSock_dir ] && mkdir $domainSock_dir
@@ -423,9 +423,9 @@ EOF
     echo "✅KONFIGURASI PAKET SELESAI DIPASANG"
 }
 
-clear
 function ssh(){
-echo "🔄MEMASANG PASSWORD SSH"
+    clear
+    echo "🔄MEMASANG PASSWORD SSH"
     wget -O /etc/pam.d/common-password "${REPO}file/password"
     chmod +x /etc/pam.d/common-password
 
@@ -495,8 +495,8 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 echo "✅PASSWORD SSH SELESAI DIPASANG"
 }
 
-clear
 function udp_mini(){
+clear
 echo "🔄MEMASANG SERVICE LIMIT QUOTA"
 wget raw.githubusercontent.com/youend098/serverku/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
@@ -580,8 +580,8 @@ systemctl start udp-mini-3
 echo "✅SERVICE LIMIT KUOTA SELESAI DIPASANG"
 }
 
-clear
 function ins_SSHD(){
+clear
 echo "🔄MEMASANG SSHD"
 wget -q -O /etc/ssh/sshd_config "${REPO}file/sshd" >/dev/null 2>&1
 chmod 700 /etc/ssh/sshd_config
@@ -591,8 +591,8 @@ systemctl restart ssh
 echo "✅SSHD SELESAI DIPASANG"
 }
 
-clear
 function ins_dropbear(){
+clear
 echo "🔄INSTALL DROPBEAR"
 apt-get install dropbear -y > /dev/null 2>&1
 wget -q -O /etc/default/dropbear "${REPO}file/dropbear.conf"
@@ -602,8 +602,8 @@ chmod +x /etc/default/dropbear
 echo "✅DROPBEAR SELESAI DI INSTALL"
 }
 
-clear
 function ins_vnstat(){
+clear
 echo "🔄INSTALL VNSTAT"
 apt -y install vnstat > /dev/null 2>&1
 /etc/init.d/vnstat restart
@@ -624,16 +624,16 @@ rm -rf /root/vnstat-2.6
 echo "✅VNSTAT SELESAI DI INSTALL"
 }
 
-clear
 function ins_openvpn(){
+clear
 echo "🔄INSTALL OPENVPN"
 wget ${REPO}file/openvpn && chmod +x openvpn && ./openvpn
 /etc/init.d/openvpn restart
 echo "✅OPENVPN SELESAI DI INSTALL"
 }
 
-clear
 function ins_backup(){
+clear
 echo "🔄MEMASANG BACKUP SERVER"
 apt install rclone -y
 printf "q\n" | rclone config
@@ -669,8 +669,8 @@ wget -q -O /etc/ipserver "${REPO}file/ipserver" && bash /etc/ipserver
 echo "✅BACKUP SERVER SELESAI DIPASANG"
 }
 
-clear
 function ins_swab(){
+clear
 echo "🔄MEMASANG SWAP 1 G"
 gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v${gotop_latest}_linux_amd64.deb"
@@ -692,8 +692,8 @@ wget ${REPO}file/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 echo "✅SWAP 1 G SELESAI DIPASANG"
 }
 
-clear
 function ins_Fail2ban(){
+clear
 echo "🔄INSTALL FAIL2BAN"
 
 if [ -d '/usr/local/ddos' ]; then
@@ -710,8 +710,8 @@ wget -O /etc/kyt.txt "${REPO}file/issue.net"
 echo "✅FAIL2BAN SELESAI DI INSTALL"
 }
 
-clear
 function ins_epro(){
+clear
 echo "🔄INSTALL EPRO WEBSOCKET PROXY"
 wget -O /usr/bin/ws "${REPO}file/ws" >/dev/null 2>&1
 wget -O /usr/bin/tun.conf "${REPO}file/tun.conf" >/dev/null 2>&1
@@ -752,8 +752,8 @@ apt autoremove -y >/dev/null 2>&1
 echo "✅EPRO WEBSOCKET PROXY SELESAI DI DI INSTALL"
 }
 
-clear
 function ins_restart(){
+clear
 echo "🔃RESTART SEMUA PAKET"
 /etc/init.d/nginx restart
 /etc/init.d/openvpn restart
@@ -785,8 +785,8 @@ rm -f /root/cert.pem
 echo "✅SEMUA PAKET BERHASIL DI RESTART"
 }
 
-clear
 function menu(){
+clear
 echo "🔄MEMASANG SEMUA PAKET MENU"
 wget ${REPO}menu/menu.zip
 unzip menu.zip
@@ -797,6 +797,7 @@ rm -rf menu.zip
 }
 
 function profile(){
+clear
 cat >/root/.profile <<EOF
 # ~/.profile: executed by Bourne-compatible login shells.
 if [ "\$BASH" ]; then
@@ -878,8 +879,8 @@ fi
 echo "✅SEMUA PAKET MENU BERHASIL DIPASANG"
 }
 
-clear
 function enable_services(){
+clear
 echo "🛠️ENABLE SERVICE"
 systemctl daemon-reload
 systemctl start netfilter-persistent
@@ -893,8 +894,8 @@ systemctl restart haproxy
 echo "✅ENABLE SERVICE SELESAI"
 }
 
-clear
 function instal(){
+clear
 echo "🔧MULAI PROSES SEMUA INSTALASI"
 first_setup
 nginx_install
