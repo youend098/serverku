@@ -214,14 +214,36 @@ function nginx_install() {
     OS_ID=$(grep -w ID /etc/os-release | head -n1 | sed 's/ID=//' | sed 's/"//g')
     OS_NAME=$(grep -w PRETTY_NAME /etc/os-release | head -n1 | sed 's/PRETTY_NAME=//' | sed 's/"//g')
 
+    # Cek apakah nginx-core sudah ada
+    if dpkg -l | grep -qw nginx-core; then
+        echo "⚠️ Nginx sudah terpasang. Mengecek konfigurasi..."
+
+        # Cek konfigurasi nginx
+        if nginx -t &>/dev/null; then
+            echo "✅ Nginx sudah terinstall dan konfigurasi valid. Melewati instalasi."
+            return
+        else
+            echo "❌ Konfigurasi nginx rusak. Melewati instalasi ulang untuk menghindari pengulangan."
+            return
+        fi
+    fi
+
+    echo "🔄 SETUP NGINX di $OS_NAME"
     if [[ "$OS_ID" == "ubuntu" ]]; then
-        echo "🔄SETUP NGINX $OS_NAME"
         sudo apt-get install nginx -y
     elif [[ "$OS_ID" == "debian" ]]; then
-        echo "🔄SETUP NGINX $OS_NAME"
         apt -y install nginx
     else
-        echo "❌OS YANG ANDA GUNAKAN TIDAK DIDUKUNG ($OS_NAME)"
+        echo "❌ OS YANG ANDA GUNAKAN TIDAK DIDUKUNG ($OS_NAME)"
+    fi
+
+    # Validasi setelah install
+    if nginx -t &>/dev/null; then
+        echo "✅ Nginx berhasil diinstal dan konfigurasi valid"
+        systemctl enable nginx
+        systemctl restart nginx
+    else
+        echo "❌ Instalasi atau konfigurasi nginx error. Harap periksa manual."
     fi
 }
 
