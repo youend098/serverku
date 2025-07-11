@@ -229,6 +229,8 @@ function base_package() {
     echo "🔄INSTALL PAKET YANG DIBUTUHKAN"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
+    apt update -y
+    apt upgrade -y
     apt dist-upgrade -y
     systemctl enable chronyd
     systemctl restart chronyd
