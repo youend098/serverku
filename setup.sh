@@ -98,7 +98,6 @@ echo "$exp" >/usr/bin/e
 
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
-oid=$(cat /usr/bin/ver)
 exp=$(cat /usr/bin/e)
 clear
 
@@ -114,7 +113,6 @@ datediff() {
     d2=$(date -d "$2" +%s)
     echo "Expiry In   : $(( (d1 - d2) / 86400 )) Days"
 }
-mai="datediff \"$exp\" \"$DATE\""
 
 # STATUS AKTIF / EXPIRED
 Info="(Active)"
