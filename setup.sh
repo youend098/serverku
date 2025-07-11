@@ -225,9 +225,9 @@ function nginx_install() {
     fi
 }
 
-clear
 # UPDATE DAN INSTALL PACKAGE
 function base_package() {
+    clear
     echo "🔄INSTALL PAKET YANG DIBUTUHKAN"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
